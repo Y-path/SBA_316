@@ -1,5 +1,5 @@
 body {
-    width: 700px;
+    width: 500px;
     height: 100px;
     font: 1em sans-serif;
     padding: 0;
@@ -8,14 +8,27 @@ body {
             
   }
   
-  form {
+  form.active {
     display: inline-block;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
-    background-color: rgba(92, 5, 255, 0.3);
+    background-color: rgba(213, 5, 255, 0.5);
     margin-top: -20px;
     margin-bottom: 40px;
+    color: white
+  }
+
+  form.hidden {
+    display: none;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: rgba(213, 5, 255, 0.5);
+    margin-top: -20px;
+    margin-bottom: 40px;
+    color: white
+
   }
   
   p * {
@@ -34,6 +47,7 @@ body {
     font-family: inherit;
     font-size: 90%;
     box-sizing: border-box;
+    color: black;
   }
 
   input#name {
@@ -44,16 +58,17 @@ body {
     font-family: inherit;
     font-size: 90%;
     box-sizing: border-box;
+    color: black;
   }
   
   
   input#mail.invalid {
-    border-color: #900;
+    border-color: orangered;
     background-color: #fdd;
   }
   
   input#name.invalid {
-    border-color: #900;
+    border-color: orangered;
     background-color: #fdd;
 
   }
@@ -65,12 +80,12 @@ body {
   .error {
     width: 100%;
     padding: 0;
-  
     font-size: 80%;
     color: white;
-    background-color: #900;
+    background-color: orangered;
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
+    display: inline-block;
   }
   
   .error.active {

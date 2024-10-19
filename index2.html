@@ -8,11 +8,11 @@
 </head>
 <body>
 
-    <form>
+    <form onsubmit = "submitForm()" id="form" class="active">Enter your information below and we will send you a new artist to discover each week
         <p>
           <label for="name">
             <span>Name:</span>
-            <input type="text" id="name" name="name" placeholder="Your Name Please" required/>
+            <input type="text" id="name" name="name" pattern="[A-Za-z]{3,}" placeholder="Your Name Please" required/>
             <span class="error" aria-live="polite"></span>
           </label>
           <label for="mail">
@@ -21,7 +21,10 @@
             <span class="error" aria-live="polite"></span>
           </label>   
         </p>
-        <button>Submit</button>
+        <button onclick="checkName()" type="submit" id="submit" >Submit</button>
+      </form> 
+      <form id="formSubmit" class="hidden">Come back tomorrow for a new artist!
+        
       </form>
     
 </body>

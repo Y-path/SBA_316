@@ -4,23 +4,26 @@ const email = document.getElementById("mail");
 const error = email.nextElementSibling;
 const name = document.getElementById("name");
 const h1 = document.createElement("h1");
-h1.textContent = "Learn More About the Artist";
+h1.textContent = "Artist Discovery";
 document.body.prepend(h1);
 h1.style.color = "white";
-h1.style.fontSize = "35px";
-const h3 = document.createElement("h3");
-h3.textContent = "Enter your information below and we will send you a new artist to discover each week";
-form.prepend(h3);
-h3.style.color = "white";
-h3.style.fontSize = "16px";
+h1.style.fontSize = "40px";
+const h2 = document.createElement("h2");
+h2.style.color = "white";
+h2.style.fontSize = "12px";
+h2.textContent = "Click on the image below"
+h1.append(h2)
 const image = new Image();
 const imageUrl = "https://uploads2.wikiart.org/images/remedios-varo/the-call.jpg!Large.jpg";
 image.src = imageUrl;
 image.style.margin = "20px"
-h1.append(image);
+h2.append(image);
 const body = document.body;
-
-
+const formSubmit = document.createElement("formSubmit");
+formSubmit.classList.add("hidden")
+formSubmit.textContent = "Come back tomorrow for a new artist";
+image.append(formSubmit); 
+document.getElementsByClassName("hidden")
 
 let color = [255, 0, 0];
 
@@ -78,3 +81,45 @@ form.addEventListener("submit", (event) => {
   }
 });string
 
+function checkName() {
+    const nameValue = document.getElementById("name").value;
+   
+    if (nameValue === "") {
+      alert("Please enter your name.");
+    }
+};
+
+function submitForm() {
+    alert("Thank you. We will be in touch!");
+    document.getElementById("form").reset();
+  }
+
+
+// below does not work
+ 
+ 
+ form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    form.classList.remove("active");
+    form.classList.add("hidden");
+    formSubmit.classList.remove("hidden");
+    formSubmit.classList.add("active");
+ });
+
+
+
+// form.addEventListener("submit", function(event) {
+//    event.preventDefault(); 
+//    const formData = new FormData(event.target);
+//    const newForm = document.getElementsByClassName
+
+// })  
+
+//   form.className = "form";
+//   console.log(form.outerHTML);
+// function submitForm() {
+//     alert("Thank you. We will be in touch!");
+//     document.getElementsByClassName = "submitted"  
+// }
+
+// document.
