@@ -1,7 +1,4 @@
-// document.body.style.backgroundImage = "url(https://uploads2.wikiart.org/images/remedios-varo/the-call.jpg!Large.jpg)";
-// document.body.style.backgroundSize = "600px";
-// document.body.style.backgroundRepeat = "no-repeat"
-// document.body.style.backgroundPosition = "center";
+
 const form = document.querySelector("form");
 const email = document.getElementById("mail");
 const error = email.nextElementSibling;
@@ -16,7 +13,31 @@ h3.textContent = "Enter your information below and we will send you a new artist
 form.prepend(h3);
 h3.style.color = "white";
 h3.style.fontSize = "16px";
+const image = new Image();
+const imageUrl = "https://uploads2.wikiart.org/images/remedios-varo/the-call.jpg!Large.jpg";
+image.src = imageUrl;
+image.style.margin = "20px"
+h1.append(image);
+const body = document.body;
 
+
+
+let color = [255, 0, 0];
+
+function changeBackgroundColor() {
+    color[2]++; 
+    color[0]--;  
+    body.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;   
+    if (color>= 255) {
+      clearInterval(intervalId);
+    }
+  }  
+  const intervalId = setInterval(changeBackgroundColor, 80);
+
+document.getElementById("image")
+image.addEventListener("click", function() {
+    window.open("https://www.wikiart.org/en/remedios-varo", "_blank");
+});
 
 
 const emailRegExp =
@@ -56,5 +77,4 @@ form.addEventListener("submit", (event) => {
     error.className = "error";
   }
 });string
-
 

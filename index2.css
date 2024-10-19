@@ -1,15 +1,11 @@
 body {
     width: 700px;
-    height: 720px;
+    height: 100px;
     font: 1em sans-serif;
     padding: 0;
     margin: 0 auto;
     text-align: center;
-    background-color: #000000;
-    background-image: url("https://uploads2.wikiart.org/images/remedios-varo/the-call.jpg!Large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-color 2s ease;
+            
   }
   
   form {
@@ -18,7 +14,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 1em;
     background-color: rgba(92, 5, 255, 0.3);
-    margin-top: 600px;
+    margin-top: -20px;
+    margin-bottom: 40px;
   }
   
   p * {
