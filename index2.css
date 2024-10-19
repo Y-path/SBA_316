@@ -1,0 +1,81 @@
+body {
+    width: 700px;
+    height: 720px;
+    font: 1em sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #000000;
+    background-image: url("https://uploads2.wikiart.org/images/remedios-varo/the-call.jpg!Large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 2s ease;
+  }
+  
+  form {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: rgba(92, 5, 255, 0.3);
+    margin-top: 600px;
+  }
+  
+  p * {
+    display: inline-flexbox;
+    text-align: left;
+    color: #ffffff;
+    font-size:large;
+    
+  }
+  
+  input#mail {
+    appearance: none;
+    width: 250px;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing: border-box;
+  }
+
+  input#name {
+    appearance: none;
+    width: 250px;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing: border-box;
+  }
+  
+  
+  input#mail.invalid {
+    border-color: #900;
+    background-color: #fdd;
+  }
+  
+  input#name.invalid {
+    border-color: #900;
+    background-color: #fdd;
+
+  }
+  input:focus.invalid {
+    outline: none;
+  }
+  
+  
+  .error {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
