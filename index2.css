@@ -8,7 +8,7 @@ body {
             
   }
   
-  form.active {
+  form {
     display: inline-block;
     padding: 1em;
     border: 1px solid #ccc;
@@ -18,18 +18,15 @@ body {
     margin-bottom: 40px;
     color: white
   }
-
-  form.hidden {
+/* .hidden {
     display: none;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-    background-color: rgba(213, 5, 255, 0.5);
-    margin-top: -20px;
-    margin-bottom: 40px;
-    color: white
+   
+  } */
 
+  .responsive {
+    width: 90%
   }
+
   
   p * {
     display: inline-flexbox;
@@ -91,3 +88,5 @@ body {
   .error.active {
     padding: 0.3em;
   }
+
+ 
