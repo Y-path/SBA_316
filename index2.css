@@ -1,14 +1,13 @@
 body {
     width: 500px;
-    height: 100px;
+    height: 700px;
     font: 1em sans-serif;
     padding: 0;
     margin: 0 auto;
     text-align: center;
-            
-  }
-  
-  form {
+}
+
+form {
     display: inline-block;
     padding: 1em;
     border: 1px solid #ccc;
@@ -17,26 +16,20 @@ body {
     margin-top: -20px;
     margin-bottom: 40px;
     color: white
-  }
-/* .hidden {
-    display: none;
-   
-  } */
+}
 
-  .responsive {
+.responsive {
     width: 90%
-  }
+}
 
-  
-  p * {
+p * {
     display: inline-flexbox;
     text-align: left;
     color: #ffffff;
-    font-size:large;
-    
-  }
-  
-  input#mail {
+    font-size: large;
+}
+
+input#mail {
     appearance: none;
     width: 250px;
     border: 1px solid #333;
@@ -45,9 +38,9 @@ body {
     font-size: 90%;
     box-sizing: border-box;
     color: black;
-  }
+}
 
-  input#name {
+input#name {
     appearance: none;
     width: 250px;
     border: 1px solid #333;
@@ -56,25 +49,23 @@ body {
     font-size: 90%;
     box-sizing: border-box;
     color: black;
-  }
-  
-  
-  input#mail.invalid {
-    border-color: orangered;
-    background-color: #fdd;
-  }
-  
-  input#name.invalid {
-    border-color: orangered;
-    background-color: #fdd;
+}
 
-  }
-  input:focus.invalid {
+input#mail.invalid {
+    border-color: orangered;
+    background-color: #fdd;
+}
+
+input#name.invalid {
+    border-color: orangered;
+    background-color: #fdd;
+}
+
+input:focus.invalid {
     outline: none;
-  }
-  
-  
-  .error {
+}
+
+.error {
     width: 100%;
     padding: 0;
     font-size: 80%;
@@ -83,10 +74,16 @@ body {
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
     display: inline-block;
-  }
-  
-  .error.active {
-    padding: 0.3em;
-  }
+}
 
- 
+.error.active {
+    padding: 0.3em;
+}
+
+ul {
+    padding-bottom: 3em;
+}
+
+li {
+    margin: 5px;
+}

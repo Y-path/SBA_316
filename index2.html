@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artist Discovery</title>
     <link rel="stylesheet" href="index2.css" />
 </head>
+
 <body>
-    <!-- <image src = "https://uploads2.wikiart.org/images/remedios-varo/the-call.jpg!Large.jpg" class = "responsive"
-    onmouseover="changeImage(1, this)" onmouseout="changeImage(2, this)"> -->
-    <form onsubmit = "submitForm()" id="form" class="active">Enter your information below and we will send you a new artist to discover each week
+    <form onsubmit="submitForm()" id="form" class="active">Enter your information below and we will send you a new
+        artist to discover each week
         <p>
-          <label for="name">
-            <span>Name:</span>
-            <input type="text" id="name" name="name" pattern="[A-Za-z]{3,}" placeholder="Your Name Please" required/>
-            <span class="error" aria-live="polite"></span>
-          </label>
-          <label for="mail">
-            <span>Email:</span>
-            <input type="text" id="mail" name="mail" placeholder="Your Email Address" required/>
-            <span class="error" aria-live="polite"></span>
-          </label>   
+            <label for="name">
+                <span>Name:</span>
+                <input type="text" id="name" name="name" pattern="[A-Za-z]{3,}" placeholder="Your Name Please"
+                    required />
+                <span class="error" aria-live="polite"></span>
+            </label>
+            <label for="mail">
+                <span>Email:</span>
+                <input type="text" id="mail" name="mail" placeholder="Your Email Address" required />
+                <span class="error" aria-live="polite"></span>
+            </label>
         </p>
         <button onclick="checkName()" type="submit" id="submit">Submit</button>
-      </form> 
-      <!-- <form id="form2" class="hidden">Come back tomorrow for a new artist!
+    </form>
 
-      </form> -->
-      <script src="index2.js"></script>
+    <ul id="list">
+        <li>Frida Kahlo</li>
+    </ul>
+
+    <script src="index2.js"></script>
 </body>
 
 </html>
